@@ -21,11 +21,12 @@ var slider = document.getElementById('slider');
 var x=1;
 function myTimeout(){
    let y=x;
+   slider.classList.remove('sale');
    slider.classList.add('img'+y);
   console.log(y);
  x=x+1;
  if(x==5){
-   slider.classList.remove('img'+1);
+  
  x=1;
 }
  
